@@ -9,10 +9,10 @@ import org.javalite.activeweb.AppContext;
 public class RouteConfig extends AbstractRouteConfig {
     @Override
     public void init(AppContext appContext) {
-      route("/{controller}/invoiceNumber/{invoiceNumber}").to(InterventionsController.class).action("findByInvoiceNumber");
-      route("/{controller}/documentNumber/{documentNumber}/states").to(InterventionsController.class).action("statesByDocumentNumber");
-      route("/{controller}/documentNumber/{documentNumber}/events").to(InterventionsController.class).action("eventsByDocumentNumber");
-      route("/{controller}/documentNumber/{documentNumber}").to(InterventionsController.class).action("findByDocumentNumber");
-      route("/{controller}/{aut_id}").to(AuthorsController.class).action("findById");
+      route("/api/v2/{controller}/invoiceNumber/{invoiceNumber}").to(InterventionsController.class).action("findByInvoiceNumber");
+      route("/api/v2/{controller}/documentNumber/{documentNumber}/states").to(InterventionsController.class).action("statesByDocumentNumber");
+      route("/api/v2/{controller}/documentNumber/{documentNumber}/events").to(InterventionsController.class).action("eventsByDocumentNumber");
+      route("/api/v2/{controller}/documentNumber/{documentNumber}").to(InterventionsController.class).action("findByDocumentNumber");
+      route("/api/v2/{controller}/{aut_id}").to(AuthorsController.class).action("findById");
     }
 }

@@ -14,9 +14,7 @@ public class AuthorsController extends APIController {
         if (blank("aut_id")) {
             throw new RuntimeException("autId number is mandatory but was empty or null");
         } else {
-            Author author = Author.findById(param("aut_id"));
-            String jsonResponse = author.toJson(false);
-            respond(jsonResponse);
+            respond("hello: " + param("aut_id"));
         }
     }
 }
