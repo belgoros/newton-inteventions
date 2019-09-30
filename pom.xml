@@ -14,7 +14,7 @@
         <activejdbc.version>2.2</activejdbc.version>
         <activeweb.version>2.3-SNAPSHOT</activeweb.version>
         <odbc.version>14</odbc.version>
-        <jackson.mapper.version>2.9.6</jackson.mapper.version>
+        <jackson.mapper.version>2.10.0</jackson.mapper.version>
         <environments>development,test</environments>
         <java.version>1.8</java.version>
     </properties>
